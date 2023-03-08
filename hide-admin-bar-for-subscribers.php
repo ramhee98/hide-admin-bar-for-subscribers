@@ -11,10 +11,10 @@
 */
 
 add_action('after_setup_theme', 'remove_admin_bar');
- 
+
 function remove_admin_bar() {
-	if (current_user_can('subscriber')) //Hide admin bar if user is a subscriber
+	if (current_user_can('subscriber'))
 	{
-		show_admin_bar(false);
+		show_admin_bar(false); //Hide admin bar if user is a subscriber
 	}
 }
